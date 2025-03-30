@@ -1,5 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
+//Some change to trigger the github action
 const taskSchema = new mongoose.Schema({
   taskName: {
     type: String,
@@ -7,7 +8,7 @@ const taskSchema = new mongoose.Schema({
   },
   createDate: Date,
   completedDate: Date,
-  completed: Boolean
+  completed: Boolean,
 });
 
-module.exports = mongoose.model('Task', taskSchema);
+module.exports = mongoose.model("Task", taskSchema);
